@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertisseur de devise</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Convertisseur de devises</h1>
+        <p>Valeurs des devises du 27/12/2021</p>
+
+    </header>
+    <main>
+        <section class="leftCol">
+            <div class="leftLeftCol">
+                <img src="images/USA.jpg" alt="Drapeau USA">
+                <img src="images/EUR.png" alt="Drapeau Europe">
+                <img src="images/JAP.png" alt="Drapeau Japonais">
+                <img src="images/BRT.png" alt="Drapeau Britannique">
+            </div>
+            <div class="rightLeftCol">
+                <ul>
+                    <li class="currencyName">- Dollar Américain (USD)</li>
+                    <ul>
+                        <li>1 USD	= 0.88 EUR</li>
+                        <li>1 USD = 0.74 LS</li>
+                        <li>1 USD = 114.73 YEN</li>
+                    </ul>
+                    <li class="currencyName">- Euro (EUR)</li>
+                    <ul>
+                        <li>1 EUR = 1.13 USD</li>
+                        <li>1 EUR = 129.8 YEN</li>
+                        <li>1 EUR = 0.84 LS</li>
+                    </ul>
+                    <li class="currencyName">- Yen Japonais (YEN)</li>
+                    <ul>
+                        <li>1 YEN = 0.0087 USD</li>
+                        <li>1 YEN = 0.0077 EUR</li>
+                        <li>1 YEN = 0.0065 LS</li>
+                    </ul>
+                    <li class="currencyName">- Livre Sterling</li>
+                    <ul>
+                        <li>1 LS = 154.04 YEN</li>
+                        <li>1 LS = 1.19 EUR</li>
+                        <li>1 LS = 1.34 USD</li>
+                    </ul>
+                </ul>
+            </div>
+        </section>
+        <section class="rightCol">
+            <div class="toConvert">
+                <p>Insérez ici le montant que vous souhaitez convertir, selectionnez la devise de référence, puis cliquez sur convertir</p>
+                <img src="images/fleche.jpg" alt="Fleche du bas">
+                <input type="number " class="valueToConvert">
+                <select name="currencyToConvert" id="CurrencyToConvert">
+                    <option value="EUR">EUR</option>
+                    <option value="USD">USD</option>
+                    <option value="YEN">YEN</option>
+                    <option value="LS">LS</option>
+                </select>
+            </div>
+            <button id="convert">Convertir</button>
+            <div class="result"></div>
+        </section>
+    </main>
+</body>
+</html>

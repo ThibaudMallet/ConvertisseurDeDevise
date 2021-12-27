@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  height: 100vh;
+  background-color: burlywood;
+}
+header h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 20px 0 0 0;
+  margin: 0 0 10px 0;
+}
+header p {
+  font-style: italic;
+  margin: 0 0 50px 0;
+  text-align: center;
+}
+
+main {
+  display: grid;
+  grid-template-areas: "left right";
+  align-items: center;
+}
+.leftCol {
+  grid-area: left;
+  margin: auto;
+  display: grid;
+  grid-template-areas: "leftLeftCol rightLeftCol";
+}
+.leftLeftCol {
+  display: flex;
+  flex-direction: column;
+}
+.leftLeftCol img {
+  height: 100px;
+  width: auto;
+  padding: 10px;
+  margin: 10px;
+}
+
+li {
+  list-style: none;
+  font-size: 1rem;
+  padding: 5px;
+}
+ul {
+  padding: 10px;
+}
+.currencyName {
+  font-size: 1.2rem;
+  text-decoration: underline;
+  margin-bottom: 5px;
+}
+.rightCol {
+  grid-area: right;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 250px;
+}
+.rightCol p {
+  width: 250px;
+  height: auto;
+  text-align: center;
+}
+.rightCol img {
+  width: 250px;
+  height: auto;
+  text-align: center;
+}
+.rightCol input {
+  width: 70%;
+  font-size: 1.3rem;
+}
+.rightCol select {
+  width: 25%;
+  font-size: 1rem;
+}
+.rightCol button {
+  margin: 20px 0;
+  border-radius: 10px;
+  padding: 15px;
+}
