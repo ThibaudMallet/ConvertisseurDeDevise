@@ -22,7 +22,9 @@ header p {
 
 main {
   display: grid;
-  grid-template-areas: "left right";
+  grid-template-areas:
+    "left right"
+    "result result";
   align-items: center;
 }
 .leftCol {
@@ -82,7 +84,14 @@ ul {
   font-size: 1rem;
 }
 .rightCol button {
-  margin: 20px 0;
+  margin-top: 20px;
   border-radius: 10px;
   padding: 15px;
+}
+
+.result {
+  grid-area: result;
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 20px;
 }

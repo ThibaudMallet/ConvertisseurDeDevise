@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Convertisseur de devise</title>
+    <title>Convertisseur de devises</title>
     <link rel="stylesheet" href="style.css">
     <script src="app.js" defer></script>
 </head>
@@ -54,7 +54,7 @@
             <div class="toConvert">
                 <p>Insérez ici le montant que vous souhaitez convertir, selectionnez la devise de référence, puis cliquez sur convertir</p>
                 <img src="images/fleche.jpg" alt="Fleche du bas">
-                <input type="number " class="valueToConvert">
+                <input type="number" id="valueToConvert">
                 <select name="currencyToConvert" id="CurrencyToConvert">
                     <option value="EUR">EUR</option>
                     <option value="USD">USD</option>
@@ -63,8 +63,9 @@
                 </select>
             </div>
             <button id="convert">Convertir</button>
-            <div class="result"></div>
+            <button id="reset">Reset</button>
         </section>
+        <div class="result"></div>
     </main>
 </body>
 </html>
